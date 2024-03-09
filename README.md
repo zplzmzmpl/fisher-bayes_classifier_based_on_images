@@ -19,66 +19,71 @@ realization of fisher and bayes classifiers, using c++(only achieve classificati
 </details>
 
 ### 1.1 输入类数,特征数,待分样本数
-<div align=center><img src = "https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/90aca060-9017-4e91-a947-d1f87e918f58"></div>
+<div align=center><img width="600" height="400" src = "https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/90aca060-9017-4e91-a947-d1f87e918f58"></div>
 <div align=center>Fig1.手动选取建立样本集</div>
 
 ### 1.2 输入训练样本数和训练样本集
 由于图片中水果数量与种类较多，选取水果类（橘子与苹果）以及背景类，进行三分类。在上步骤中选定apple样本52个，橘子样本48个，背景样本53个，同时计算先验概率。
-<div align=center><img src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/ca35f4c2-611f-48cf-8ca6-fdfde8a24550"></div>
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/ca35f4c2-611f-48cf-8ca6-fdfde8a24550"></div>
 <div align=center>Fig2.三样本数据集示意</div>
 
 ### 1.3 计算先验概率
 根据各样本数量以及样本总数计算先验概率。
-<div align =center><img src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/7c2e194a-f4ea-4f51-86f8-a5b24f1f0707"></div>
+<div align =center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/7c2e194a-f4ea-4f51-86f8-a5b24f1f0707"></div>
 <div align=center>Fig3.计算先验概率</div>
 
 ### 1.4 计算各类条件概率密度
-<div align=center><img src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/ee756eb1-4158-4881-b02d-61c9af1b80e9"></div>
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/ee756eb1-4158-4881-b02d-61c9af1b80e9"></div>
 <div align=center>Fig4.创建水果结构体（RGB通道三特征）</div>
 
 ### 1.5 计算各类的后验概率
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/2f870fcd-5f30-4985-9435-de938768661c)
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/2f870fcd-5f30-4985-9435-de938768661c"></div>
 <div align=center>Fig5.后验概率计算</div>
 
 ### 1.6 若按最小错误率原则分类,则根据后验概率判定
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/930efda0-5cb8-48dd-b25f-35e53d065dc4)
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/930efda0-5cb8-48dd-b25f-35e53d065dc4"></div>
 <div align=center>Fig6.依据特征值分类函数</div>
 
 ### 1.7 使用测试集RGB数值数据
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/02280898-97c5-4cd9-b17c-3099c2c3b39d)
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/02280898-97c5-4cd9-b17c-3099c2c3b39d"></div>
 <div align=center>Fig7.测试集（第四列为真值）</div>
+
 ---
 
 *结果如下：*
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/edf629af-b3d7-46d4-b32d-7d6f98ac5dfd)
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/edf629af-b3d7-46d4-b32d-7d6f98ac5dfd"></div>
 <div align=center>Fig8.分类结果（0为苹果1为橘子2为背景）</div>
 
 ---
+
 *精度验证*
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/bdc504d4-d6ee-4f27-beef-82649de59b96)
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/bdc504d4-d6ee-4f27-beef-82649de59b96"></div>
 <div align=center>Fig9.错误率为0.181818</div>
 
 
 ### 1.8 使用opencv测试整张图片所有像素
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/f3ff0e12-c58e-4b7c-b89a-4e992f5452b8)
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/f3ff0e12-c58e-4b7c-b89a-4e992f5452b8"></div>
 <div align=center>Fig10.获取图片内所有像素RGB值</div>
 
 ---
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/8265d66e-75a7-4013-bb93-634334227630)
+
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/8265d66e-75a7-4013-bb93-634334227630"></div>
 <div align=center>Fig11.逐值分类</div>
 
 ---
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/7b490003-864f-41b8-93b1-bafd4f4127fb)
+
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/7b490003-864f-41b8-93b1-bafd4f4127fb"></div>
 <div align=center>Fig12.vector<int>输出为图片</div>
+
 ---
   
 ### 1.9 分类结果
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/00081264-e270-4895-92f4-7998841f259e)
-<div align=center>Fig13.分类前后对比</div>
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/00081264-e270-4895-92f4-7998841f259e"></div>
+<div align=center>Fig13.Bayes分类前后对比</div>
 
 ## 2 Fisher Classifier
 
-Fisher线性判别准则（Fisher Linear Discriminant Criterion）是一种监督学习算法，用于数据的分类1。在图像处理中，我们可以将其应用于RGB多波段的多类分类[^2]。
+Fisher线性判别准则（Fisher Linear Discriminant Criterion）是一种监督学习算法，用于数据的分类。在图像处理中，我们可以将其应用于RGB多波段的多类分类[^2]。
 <details>
 <summary>其实现原理和步骤大致如下：</summary>
 
@@ -90,7 +95,7 @@ Fisher线性判别准则（Fisher Linear Discriminant Criterion）是一种监�
 </details>
 
 *我们的目的是将高维的数据投影到一维直线上并在投影的值中取一个阈值进行分类，如下图所示：*
-![image](https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/a5cd5fea-c352-4030-b000-081dcde5cac4)
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/a5cd5fea-c352-4030-b000-081dcde5cac4"></div>
 
 在上图，很明显左边的投影更适合分类，因为两种类别（o和x）在投影直线上能轻松地找到一个阈值将其区分开来，而右边的投影方向则不适合当前分类。
 所以我们需要求解一个适合的投影方向w。在理解fisher的时候，其大致的思路如下：
@@ -99,8 +104,19 @@ Fisher线性判别准则（Fisher Linear Discriminant Criterion）是一种监�
 3.	按照类间小，类内大的目标，设立目标函数求解w
 值得注意的是，我们求得的w是最终投影的平面（在这里为一维直线）方向。
 
+**训练数据相同**
 
+*程序实现步骤如下*：
+- 计算样本均值向量
+- 计算样本离散度矩阵
+- 计算样本总类内离散度矩阵
+- 判别阈值
+- 逐像元分类（0为苹果；1为橘子；2为背景；3为未分类）
+- 根据结果赋值输出图片（0为红色；1为绿色，2为蓝色；3为白色）
 
+**结果如下：**
+<div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/84af1831-5645-48fb-962d-29a16743989c"></div>
+<div align=center>Fig14.Fisher分类前后对比</div>
 
 [^1]: 贝叶斯定理是贝叶斯分类器的理论基础，其基本形式如下：
 P(A|B) = P(B|A) × P(A) / P(B)
