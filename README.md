@@ -118,6 +118,13 @@ Fisher线性判别准则（Fisher Linear Discriminant Criterion）是一种监�
 <div align=center><img width="600" height="400" src="https://github.com/zplzmzmpl/fisher-bayes_classifier_based_on_images/assets/121420991/84af1831-5645-48fb-962d-29a16743989c"></div>
 <div align=center>Fig14.Fisher分类前后对比</div>
 
+> [!CAUTION]
+> **免责声明**
+> 
+> *如果您因在课程报告中使用本仓库代码或图片而造成的一切影响，仓库所有者不承担其责任*
+
+
+
 [^1]: 贝叶斯定理是贝叶斯分类器的理论基础，其基本形式如下：
 P(A|B) = P(B|A) × P(A) / P(B)
 其中，P(A|B)表示在给定B的条件下A发生的概率，P(B|A)表示在给定A的条件下B发生的概率，P(A)表示A发生的概率，P(B)表示B发生的概率。在分类问题中，我们可以将类别作为事件A，特征作为事件B。贝叶斯定理可以帮助我们计算给定特征下某个类别的概率，从而进行分类。(https://cloud.baidu.com/article/3169932)
