@@ -2,9 +2,9 @@
 realization of fisher and bayes classifiers, using c++(only achieve classification of 3 features, if you want to classify more features, just modify this code as you need.)
 
 > [!WARNING]  
-> 如果您是中国地质大学武汉的学生并且在学习《模式识别》课程，请谨慎使用。❌
+> 中国地质大学武汉《模式识别》课程，请谨慎使用。❌
 > 
-> 该仓库代码按老师要求创建。😈
+> 该仓库代码已存档。😈
 
 ## 1 Bayes Classifier
 
@@ -121,7 +121,7 @@ Fisher线性判别准则（Fisher Linear Discriminant Criterion）是一种监�
 > [!CAUTION]
 > **免责声明**
 > 
-> *如果您因在课程报告中使用本仓库代码或图片而造成的一切影响，仓库所有者不承担其责任*
+> *如因在课程报告中使用本仓库代码或图片而造成的一切后果由使用者自行承担*
 
 
 
